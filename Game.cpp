@@ -27,13 +27,13 @@ int main(int argc, char* argv[])
 
     if (NULL == window)
     {
-        std::cout << "Could not create window: " << SDL_GetError() << std::endl;
+        std::cout << "variable window = NULL... [ERROR]: " << SDL_GetError() << std::endl;
         return 1;
     }
 
     if (!(IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG))
     {
-        std::cout << "Could not create window: " << IMG_GetError() << std::endl;
+        std::cout << "Ne peu pas creer la fenetre [ERROR]: " << IMG_GetError() << std::endl;
         return 1;
     }
 
